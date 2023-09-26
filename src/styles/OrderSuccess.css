@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Aladin&family=Averia+Sans+Libre&family=Kodchasan:wght@200&family=Laila&family=Pacifico&family=Qwitcher+Grypen:wght@700&family=Roboto:wght@300&family=Rochester&family=Sofia&display=swap');
+.OrderSuccess{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.OrderSuccess .container{
+    height: 60%;
+    width: 50%;
+    background-color: rgb(231, 231, 231);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    border-radius: 25px;
+    transform: translateY(15%);
+    text-align: center;
+}
+.OrderSuccess .container .check{
+    width: 40px;
+    height: 40px;
+    color: rgb(15, 139, 15);
+    background-color: white;
+    padding: 10px;
+    border-radius: 50%;
+}
+.OrderSuccess .container h1 {
+    font-family: 'Laila', sans-serif;
+    color: #78C1F3;
+    text-transform: capitalize;
+}
+.OrderSuccess .container h3 , .OrderSuccess .container h4{
+    font-family: 'Laila', sans-serif;
+    color: #333;
+}
+.OrderSuccess .container h4 a{
+    color: #78C1F3;
+}
+.OrderSuccess .container button{
+    width: 50%;
+    padding: 10px;
+    font-size: 1rem;
+    text-transform: capitalize;
+    background-color: #78C1F3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+@media screen and (max-width: 900px){
+    .OrderSuccess{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .OrderSuccess .container{
+        height: auto;
+        width: 90%;
+        transform: translateY(0);
+        padding: 40px 10px;
+    }
+    .OrderSuccess .container .check{
+        width: 30px;
+        height: 30px;
+    }
+    .OrderSuccess .container h1 {
+        font-size: 1.7rem;
+    }
+    .OrderSuccess .container h3 , .OrderSuccess .container h4{
+        font-family: 'Laila', sans-serif;
+        color: #333;
+    }
+    .OrderSuccess .container h4 a{
+        color: #78C1F3;
+    }
+    .OrderSuccess .container button{
+        width: 60%;
+        padding: 10px;
+        font-size: 1rem;
+        text-transform: capitalize;
+        background-color: #78C1F3;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+}

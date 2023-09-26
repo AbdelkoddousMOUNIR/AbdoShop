@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Aladin&family=Averia+Sans+Libre&family=Kodchasan:wght@200&family=Laila&family=Pacifico&family=Qwitcher+Grypen:wght@700&family=Roboto:wght@300&family=Rochester&family=Sofia&display=swap');
+.StoresBanner{
+    margin-top: 9vh;
+    width: 100%;
+    height: auto;
+    background-color: #d6d6d6;
+    display: flex;
+    padding: 30px 0;
+}
+.StoresBanner .imageContainer , .StoresBanner .container{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.StoresBanner .imageContainer img{
+    width: 300px;
+    height: 300px;
+    border-radius: 25px;
+}
+.StoresBanner .container{
+    flex-direction: column;
+    align-items: start;
+    gap: 7px;
+    padding: 0  0 0 10%;
+}
+.StoresBanner .container h3{
+    font-size: 1.3rem;
+    color: #333;
+    font-family: 'Laila', sans-serif;
+    text-transform: capitalize;
+}
+.StoresBanner .container h2{
+    font-size: 2rem;
+    font-family: 'Laila', sans-serif;
+    text-transform: capitalize;
+    color: #78C1F3;
+}
+.StoresBanner .container h1{
+    font-size: 3rem;
+    color: white;
+    font-family: 'Laila', sans-serif;
+    text-transform: capitalize;
+}
+.StoresBanner .container button{
+    padding: 10px 30px;
+    font-size: 1rem;
+    width: 200px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    background-color: #78C1F3;
+    color: white;
+    text-transform: capitalize;
+}
+@media screen and (max-width: 700px){
+    .StoresBanner .imageContainer {
+        padding: 0 10px;
+    }
+    .StoresBanner .imageContainer img{
+        width: 100%;
+        height: 77%;
+    }
+    .StoresBanner .container{
+        flex-direction: column;
+        align-items: start;
+        gap: 7px;
+        padding: 0  0 0 15px;
+    }
+    .StoresBanner .container h3{
+        font-size: 1rem;
+    }
+    .StoresBanner .container h2{
+        font-size: 1.3rem;
+    }
+    .StoresBanner .container h1{
+        font-size: 1.7rem;
+    }
+    .StoresBanner .container button{
+        padding: 7px 20px;
+        font-size: 1rem;
+        width: 130px;
+    }
+}

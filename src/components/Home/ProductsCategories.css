@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Aladin&family=Averia+Sans+Libre&family=Kodchasan:wght@200&family=Laila&family=Pacifico&family=Qwitcher+Grypen:wght@700&family=Roboto:wght@300&family=Rochester&family=Sofia&display=swap');
+.ProductsCategories{
+    height: auto;
+    width: 100%;
+}
+.ProductsCategories .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    padding: 0 20px;
+}
+.ProductsCategories .container input{
+    height: 45px;
+    padding: 10px 20px;
+    width: 250px;
+    margin-top: 30px;
+    border-radius: 25px;
+    outline: none;
+    border: 2px solid #78C1F3;
+    font-size: 1rem;
+    text-transform: capitalize;
+    font-family: 'Roboto', sans-serif;
+}
+.ProductsCategories .ProductsContainer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 30px;
+    margin-top: 30px;
+}
+.ProductsCategories .ProductsContainer a{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.ProductsCategories .ProductsContainer a img{
+    width: 200px;
+    height: 200px;
+}
+.ProductsCategories .ProductsContainer a h3{
+    text-transform: capitalize;
+    color: #78C1F3;
+}
+.ProductsCategories .ProductsContainer h1{
+    height: 20%;
+    text-transform: capitalize;
+    font-size: 2rem;
+    font-family: 'Laila', sans-serif;
+    color: #78C1F3;
+}
+@media screen and (max-width: 700px){
+    .ProductsCategories .container h1{
+        font-size: 1.4rem;
+    }
+    .ProductsCategories .container input{
+        width: 50%;
+        font-size: 0.7rem;
+    }
+    .ProductsCategories .ProductsContainer h1{
+        font-size: 1.5rem;
+    }
+}

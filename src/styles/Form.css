@@ -1,0 +1,47 @@
+.Form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    width: 50%;
+    height: auto;
+}
+.Form input{
+    width: 50%;
+    height: 50px;
+    font-size: 1rem;
+    text-transform: capitalize;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid #78C1F3;
+}
+.Form .btns{
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.Form .btns button{
+    font-size: 1rem;
+    text-transform: capitalize;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: #78C1F3;
+    color: white;
+}
+@media screen and (max-width: 900px){
+    .Form{
+        width: 100%;
+        margin-top: 30px;
+        gap: 25px;
+    }
+    .Form input{
+        width: 70%;
+    }
+}

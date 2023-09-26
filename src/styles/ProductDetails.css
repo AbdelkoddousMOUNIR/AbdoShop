@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Aladin&family=Averia+Sans+Libre&family=Kodchasan:wght@200&family=Laila&family=Pacifico&family=Qwitcher+Grypen:wght@700&family=Roboto:wght@300&family=Rochester&family=Sofia&display=swap');
+.ProductDetails{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media screen and (max-width: 700px){
+    .ProductDetails{
+        flex-direction: column;
+        padding: 30px 15px;
+    }
+}

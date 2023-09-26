@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Kodchasan:wght@200&family=Qwitcher+Grypen:wght@700&display=swap');
+.Navbar nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:10px 50px;
+    background-color: #78C1F3;
+    height: 9vh;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    color: #E2F6CA;
+}
+.Navbar nav .logo{
+    font-size: 2.5rem;
+    font-family: 'Qwitcher Grypen', cursive;
+}
+.Navbar nav ul{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.Navbar nav ul li {
+    list-style: none;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.Navbar nav ul li a{
+    text-decoration: none;
+    color: #E2F6CA;
+}
+.Navbar nav ul li a:hover{
+    font-size: 1.3rem;
+    filter: brightness(1.1);
+}
+.Navbar nav .navbar-toggle{
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+@media screen and (max-width: 700px) {
+    .Navbar nav{
+        padding:20px;
+    }
+    .Navbar nav ul{
+        display: none;
+        justify-content: center;
+        background-color: #78C1F3 ;
+        flex-direction: column;
+        gap: 50px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 80%;
+    }
+    .Navbar nav ul li a{
+        color: #E2F6CA;
+        font-size: 1.5rem;
+    }
+    .Navbar nav ul li a:hover{
+        font-size: 1.6rem;
+    }
+    .Navbar nav .navbar-toggle{
+        display: block;
+        transition: 0.5s;
+        font-size: 1.5rem;
+    }
+    .Navbar nav .navbar-toggle:hover{
+        transform: scale(1.2);
+    }
+    .Navbar .active{
+        display: flex;
+    }
+}

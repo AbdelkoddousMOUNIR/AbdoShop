@@ -1,0 +1,60 @@
+.Store{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    scroll-behavior: smooth;
+    position: relative;
+}
+
+.Store .StoresNavBar {
+    background-color: #78C1F3;
+}
+
+.Store .StoresBanner{
+    background-color: #a6d8fa;
+}
+.Store .StoresBanner h2{
+    color: #78C1F3;
+}
+.Store .StoresBanner button{
+    background-color: #78C1F3;
+}
+
+.Store .StoresProducts .products h2{
+    color: #78C1F3;
+}
+
+.Store .StoresProducts .products .container a h2{
+    color: #78C1F3;
+}
+
+.Store .StoresProducts .products .container .shopCart button{
+    background-color: #78C1F3;
+}
+
+.Store .StoresPannie{
+    background-color: #78C1F3;
+}
+.Store .StoresPannie::-webkit-scrollbar-track
+{
+    background-color: #78C1F3;
+}
+.Store .StoresPannie .container span{
+    color: white;
+}
+.Store .StoresPannie .container button{
+    background-color: white;
+    color: #78C1F3;
+}
+@media screen and (max-width: 600px) {
+    .Store .StoresNavBar {
+        background: transparent;
+    }
+    .Store .StoresNavBar .container{
+        background-color: #78C1F3;
+    }
+    .Store .StoresNavBar .icons{
+        background-color: #78C1F3;
+    }
+}
