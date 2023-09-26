@@ -35,10 +35,9 @@ export default function StoresProducts({ data, Inputdata}) {
               <button>
                 <Link to={`/${product.category}/${product.name}`}>order now</Link>
               </button>
-              <button
-                className='btn'
-                onClick={() =>{addToCart(product)}}
-              >
+              <button className='btn' onClick ={() => {
+                addToCart(product)
+              }}>
                 add to cart
               </button>
             </div>

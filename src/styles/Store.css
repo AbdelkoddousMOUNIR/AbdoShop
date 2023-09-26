@@ -48,9 +48,6 @@
     color: #78C1F3;
 }
 @media screen and (max-width: 600px) {
-    .Store .StoresNavBar {
-        background: transparent;
-    }
     .Store .StoresNavBar .container{
         background-color: #78C1F3;
     }
