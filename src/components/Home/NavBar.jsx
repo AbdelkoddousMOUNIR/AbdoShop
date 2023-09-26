@@ -13,7 +13,7 @@ export default function NavBar() {
   return (
     <div className="Navbar">
       <nav>
-        <div className="logo">shopnet</div>
+        <div className="logo">abdo shop</div>
         <div className="navbar-toggle" onClick={toggleNav}>
             <FontAwesomeIcon icon={faBars} />
         </div>

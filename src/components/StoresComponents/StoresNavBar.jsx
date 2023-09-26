@@ -24,7 +24,7 @@ export default function StoresNavBar({ getData}) {
     <nav className="StoresNavBar">
       <div className="container">
         <Link to="/">
-          <div className="logo">shopnet</div>
+          <div className="logo">abdo shop</div>
         </Link>
         <input type="text" placeholder="Search for a product" onChange={handleChange} />
       </div>
