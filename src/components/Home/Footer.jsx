@@ -23,7 +23,7 @@ export default function Footer() {
           <li><HashLink smooth to="#productsCategories">products categories</HashLink></li>
           <li><HashLink smooth to="#delivery">delivery</HashLink></li>
           <li><HashLink smooth to="#contact">contact</HashLink></li>
-          <h3>shopnet ©</h3>
+          <h3>abdo shop ©</h3>
         </ul>
         </div>
         <div className="social-media">

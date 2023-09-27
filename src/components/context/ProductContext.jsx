@@ -46,7 +46,9 @@ export default function ProductContext({ children }) {
   let showFormEl = () => {
     setShowForm(!showForm)
   }
-
+  let closeForm = () => {
+    setShowForm(false)
+  }
 
   let productContextContextValues = {
     getProduct,
@@ -58,6 +60,7 @@ export default function ProductContext({ children }) {
     showFormEl,
     getCheckedColor,
     getCheckedSize,
+    closeForm,
     displayedImage,
     totalePrice,
     color,
@@ -67,7 +70,7 @@ export default function ProductContext({ children }) {
     showForm,
     checkedColor,
     checkedSize,
-    number
+    number,
   }
   return (
     <productContext.Provider value={productContextContextValues}>

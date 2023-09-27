@@ -13,6 +13,9 @@ export default function CartContext({ children }) {
         setShowCart(!showCart)
   }
   
+  const closeCart = () => {
+      setShowCart(false)
+  }
     const StoreItems = () => {
       localStorage.setItem("Items" , JSON.stringify(cartItems))
   }
@@ -44,7 +47,8 @@ let CartContextValues = {
     cartItems,
     showCart,
     remouveProduct,
-    totalAmount
+    totalAmount,
+    closeCart
 }
   return (
     <cartContext.Provider value={CartContextValues}>

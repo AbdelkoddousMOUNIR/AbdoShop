@@ -13,7 +13,7 @@ export default function OrderSuccess() {
             <FontAwesomeIcon icon={faCheck} className='check'/> 
               <h1>thank you for your confidence</h1>
               <h3>we will contact you very soon to confirme your order !</h3>
-              <h4>if you have any questions please email <Link>Sopnet@gmail.com</Link></h4>
+              <h4>if you have any questions please email <Link>AbdoShop@gmail.com</Link></h4>
               <button onClick={() =>{navigate("/")}}>continue shopping</button>
         </div>
     </div>

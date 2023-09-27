@@ -8,7 +8,7 @@ import { cartContext } from '../components/context/CartContext';
 
 export default function Store({products}) {
     const [inputData, setInputData] = useState('');
-    const { showCart, cartItems} = useContext(cartContext);
+    const { showCart, cartItems , closeCart} = useContext(cartContext);
     const Banner = products[products.length - 1];
     
     const getData = (data) => {
@@ -19,7 +19,7 @@ export default function Store({products}) {
         <StoresNavBar getData={getData} productsNumber={1} />
         {inputData.length === 0 ? <StoresBanner Banner = {Banner} /> : ""}
         <StoresProducts Inputdata={inputData} data={products} />
-        {showCart && cartItems.length > 0 ? <StorePannie /> : ''}
+        {showCart && cartItems.length > 0 ? <StorePannie /> : closeCart()}
       </div>  
     );
 }

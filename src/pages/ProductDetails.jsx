@@ -8,7 +8,7 @@ import DetailsContainer from '../components/ProductDetailsComponents/DetailsCont
 import Form from '../components/ProductDetailsComponents/Form';
 
 export default function ProductDetails({ products }) {
-  let {getProduct , showForm , getNumber , getColor , getCheckedColor , getSize , getCheckedSize , getCheckedImg , changeImg} = useContext(productContext)
+  let {getProduct , showForm , getNumber , getColor , getCheckedColor , getSize , getCheckedSize , getCheckedImg , changeImg , closeForm} = useContext(productContext)
   let { productName } = useParams();
   
   useEffect(() => {
@@ -21,6 +21,7 @@ export default function ProductDetails({ products }) {
     getCheckedColor()
     getCheckedImg(0)
     changeImg()
+    closeForm()
   }, [productName]);
 
   return (
