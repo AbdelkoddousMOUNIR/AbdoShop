@@ -1,4 +1,5 @@
-import React, { useState , useContext } from 'react';
+/* eslint-disable react-hooks/exhaustive-deps */
+import React, { useState , useContext  , useEffect} from 'react';
 import '../styles/Store.css';
 import StoresNavBar from '../components/StoresComponents/StoresNavBar';
 import StoresBanner from '../components/StoresComponents/StoresBanner';
@@ -10,10 +11,14 @@ export default function Store({products}) {
     const [inputData, setInputData] = useState('');
     const { showCart, cartItems , closeCart} = useContext(cartContext);
     const Banner = products[products.length - 1];
-    
+    useEffect(() => {
+        closeCart()
+    }, [products])
+  
     const getData = (data) => {
       setInputData(data);
-    };
+  };
+
     return (
       <div className="Store">
         <StoresNavBar getData={getData} productsNumber={1} />
